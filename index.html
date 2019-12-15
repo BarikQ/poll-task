@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./src/styles/stylesheet.css" />
+    <link rel="stylesheet" href="./src/fonts/fonts.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="game-container">
+      <div class="game-content">
+        <div class="game-content-inner">
+          <div class="preview-container game-container-inner" id="preview">
+            <div class="preview-content">
+              <h1 class="preview-title">
+                В России 94% импортной картошки фри. А помидоров? А сыра? Тест
+                «Медузы»
+              </h1>
+
+              <p class="preview-date">
+                09:05, 29 мая 2018
+              </p>
+
+              <p class="preview-text">
+                В середине мая российские производители призвали запретить
+                иностранную картошку фри, хотя доля импорта на рынке составляет
+                94%. «Медуза» посмотрела на другие товары и долю их импорта — и
+                обнаружила массу всего интересного. Разбираетесь ли вы в том,
+                что импортное предпочитают россияне? Сейчас проверим.
+              </p>
+
+              <button
+                class="button-game button-start button-gold"
+                id="button-start"
+              >
+                НАЧАТЬ
+              </button>
+
+              <div class="preview-social"></div>
+            </div>
+          </div>
+
+          <div
+            class="poll-container game-container-inner display-false"
+            id="game"
+          >
+            <div class="number-container">
+              <p class="question-number"></p>
+            </div>
+
+            <div class="question-container">
+              <h1 class="question-text"></h1>
+            </div>
+
+            <div class="question-image-container">
+              <img
+                class="question-image"
+                src=""
+                width="1280px"
+                height="874px"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="post-answer-container display-false"
+              id="post-container"
+            >
+              <div class="answer-container" id="compare">
+                <p class="answer-value-right">
+                  Ответ:
+                  <span id="right-answer"></span>
+                </p>
+                <p class="answer-value-user">
+                  Ваш вариант:
+                  <span id="user-answer"></span>
+                </p>
+              </div>
+
+              <p class="post-text" id="post-text"></p>
+            </div>
+
+            <div class="range-container" id="range-container">
+              <p class="answer-value"></p>
+              <input
+                class="answer-range"
+                type="range"
+                name=""
+                id="answer-range"
+                min="0"
+                max="100"
+              />
+            </div>
+
+            <button class="button-game button-next" id="button-next">
+              Дальше
+            </button>
+            <button class="button-game button-answer" id="button-answer">
+              Ответить
+            </button>
+          </div>
+
+          <div
+            class="final-container game-container-inner display-false"
+            id="final"
+          >
+            <div class="preview-content final-content">
+              <div class="final-text-container">
+                <h1 class="preview-title final-title">
+                  Сколько в России импортного? Тест Кирхгофа
+                </h1>
+
+                <p class="preview-text final-text" id="final-text">
+                  Вы ничо не знаете
+                </p>
+              </div>
+
+              <div class="preview-social"></div>
+            </div>
+            <div class="restart" id="restart">
+              <img
+                class="restart-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAiCAYAAABMfblJAAAABGdBTUEAALGPC/xhBQAABHdJREFUSA21V11sVFUQnjl3u70lqVFKUEB9MEYTHoAoBiOmyRoD3ZpIoz7YbatUDPggkdB2H5qYNDH+bbc0kcQEEpGHtkuJ0daH/iyBJWi0JhjxgaZ98A8rWkNfLGa3u3vvOHO3Z7nL/sC6y0nbMzNn5vvuOWfOnFOEMhtRn5oMz3+DAHUG4au7giOXyoFQ5TiL77nBnzcA0Q4i2mKhPTPVH3izHIyyCd3gRFBrk310ItT6xVcfB+5xjxWTKyK8AUoty9ftS9FQ284btsJSlQgd8ActsM5PhQO9ss+F6QCKDhQLWKHk+mJjBOCxbfvdqf65aCy0975CfpxspVtscO/d8VSyFZBeQoKtBNRQOiIzioh/Q43R6D80NO/297gVt/z1J6/V/7MUfyeRWjkAQCbw5/PPbTfO4vWYsp7ggBzCgks6HW7zLy/F55jiLZ6RmcOC8FeOXkBBBOIZvt/U/ejIzcN5SzrZH9hHYB/j6RhZZ8QLgHgcvLXR2rTlXUknF7JjeQIuGgo6dndHzuQNsSFnSSfDgf1kM9lq4y/9hch4o7lnOKptZ4+8sknL+T2e8Xqh49lDkcX8sYwlSxg98vL2dNo+qh2Z7Hz92jXPP73vxLK2Fet5mdIA+HZTz8iHvJQlt9rZw8un+7zpNI4yoFdAhcxcZ/pvh4ydf+PfRn8w8sGtyATbIbxyZf51TpCHxMB0iyaZrb7Ok4mMnvtXofpXksLxRPi8zlO7zd8T+TbXq7iGsVifJ35x7leGcPYGQXX6gyMni4cATIdbWywgT3P3qc9K+RUa88R/mN+ZJUP4ydz+yFAhR7eNM3DMrZcjK7TgOR3A1X/U5+vjBLhzTfHBfkrDo8JJLd+p3sMpvVHnMXnNnDJULdJoKLDNQupAA0d5huBUdTlL/oMnrlWLxI2TBjrNtfUwWTSm+JgmnUEE4/vjB7KFwB1QiXzx2P4argUPOxhEa2SGV0XhhMGl66mCd1glhIIp2A4Hc/HBxwUNSHZ8i5ar1edi4oLiqhHT4DbgHi1Xq3djCpdCA77U4LyfL0x81HaX1ivtBYur4Isah1CNq6bDkcvM/KMY5fmACerRDpX2asUO8v6tFRzhaO4ennWKNyjVq8EJ7a7pcOBxrf/fXjCYrCsbv8rhZI8YJ0Ot53iGPpGRE8moox27Dp5yMlhs5TS5pJPp1Azj3S9xjBfj6+sZkTMzZMHrqengEee9Io5WHL+bGmx/TJzKaRLjJhNMB3sVJDtD0ScG2p5Ey44xYebhhBBHUgP1DWboVpexvPKWlxJB2RJOhjrB45klyFC+5q7hGdGl5RCKQUjBsvn6oXtFl8aBS8SXrQIaR6iZ9a4z/hR78pq1gSC1WVJfMpw/tEHsmYaLYKgWN5nY8wjFOD3Q+YBlJ4a4/DSKXnbjV56hzPbdXZ/+fnNsQULtxP+K7eGvfo8L72ZtK9Xzm2aWV6OXH1PjxfxKEuqgqYH2rWSnW7gkNvLSbeL6u1HGOPgqL/UffLgvoPKMNXUNOedZxxXq/wMQZqMaWOCPagAAAABJRU5ErkJggg=="
+                alt=""
+              />
+              Играть ещё раз
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/scripts/script.min.js"></script>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>

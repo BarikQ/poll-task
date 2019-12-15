@@ -1,0 +1,79 @@
+{
+  "questions": [{
+      "question": "Cколько стоит ваш шмот?",
+      "answer": 15,
+      "post_text": "ti idiot)))",
+      "image": "./src/images/dumb.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    },
+    {
+      "question": "почом картошка?",
+      "answer": 45,
+      "post_text": "ti idiot))) 2",
+      "image": "./src/images/dumb_2.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    }, {
+      "question": "Cколько стоит ваш шмот?",
+      "answer": 15,
+      "post_text": "ti idiot)))",
+      "image": "./src/images/dumb.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    },
+    {
+      "question": "почом картошка?",
+      "answer": 45,
+      "post_text": "ti idiot))) 2",
+      "image": "./src/images/dumb_2.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    }, {
+      "question": "Cколько стоит ваш шмот?",
+      "answer": 15,
+      "post_text": "ti idiot)))",
+      "image": "./src/images/dumb.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    },
+    {
+      "question": "почом картошка?",
+      "answer": 45,
+      "post_text": "ti idiot))) 2",
+      "image": "./src/images/dumb_2.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    }, {
+      "question": "Cколько стоит ваш шмот?",
+      "answer": 15,
+      "post_text": "ti idiot)))",
+      "image": "./src/images/dumb.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    },
+    {
+      "question": "почом картошка?",
+      "answer": 45,
+      "post_text": "ti idiot))) 2",
+      "image": "./src/images/dumb_2.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    }, {
+      "question": "Cколько стоит ваш шмот?",
+      "answer": 15,
+      "post_text": "ti idiot)))",
+      "image": "./src/images/dumb.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    },
+    {
+      "question": "почом картошка?",
+      "answer": 45,
+      "post_text": "ti idiot))) 2",
+      "image": "./src/images/dumb_2.jpg",
+      "right_answer_text": "KRASAVA!!!",
+      "wrong_answer_text": "DEBIL !)))"
+    }
+  ]
+}
