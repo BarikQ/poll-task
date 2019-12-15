@@ -100,7 +100,9 @@ class App {
   }
 
   getData() {
-    fetch("./questions.JSON")
+    fetch(
+      "https://raw.githubusercontent.com/BarikQ/poll-task/master/questions.json"
+    )
       .then(res => res.json())
       .then(data => {
         IMAGE_SRC.src = `${data.questions[this.current].image}`;
